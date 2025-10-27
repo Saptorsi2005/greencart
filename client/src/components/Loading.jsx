@@ -11,8 +11,6 @@ const Loading = () => {
 
   useEffect(() => {
     if (nextUrl) {
-      setCartItems({})
-      localStorage.removeItem('cart')
       setTimeout(() => {
         navigate(`/${nextUrl}`)
       }, 5000)
